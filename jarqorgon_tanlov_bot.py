@@ -102,7 +102,7 @@ async def start(update: Update, context: CallbackContext) -> None:
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
-        'Tanlovga xush kelibsiz! Iltimos, direktorlar ro\'yxatidan bitta direktor uchun ovoz bering:',
+        '🎓 Assalomu alaykum! Mazkur rasmiy bot orqali siz 2024-yil davomida eng faol bo‘lgan maktab direktoriga ovoz berishingiz mumkin.',
         reply_markup=reply_markup
     )
 
@@ -117,7 +117,7 @@ async def button(update: Update, context: CallbackContext) -> None:
         await query.edit_message_text(text="Siz allaqachon ovoz bergansiz!")
     else:
         user_votes[user_id] = query.data
-        await query.edit_message_text(text=f"Siz {query.data} direktoriga ovoz berdingiz!")
+        await query.edit_message_text(text=f"Siz {query.data} direktorimizga ovoz berdingiz!")
 
 # Natijalarni ko'rsatish
 async def results(update: Update, context: CallbackContext) -> None:

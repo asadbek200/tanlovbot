@@ -102,7 +102,7 @@ async def start(update: Update, context: CallbackContext) -> None:
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
-        '🎓 Assalomu alaykum! Mazkur rasmiy bot orqali siz 2024-yil davomida eng faol bo‘lgan maktab direktoriga ovoz berishingiz mumkin.',
+        '🎓 Assalomu alaykum! Mazkur rasmiy bot orqali siz 2024-yil davomida eng faol bo\'lgan maktab direktoriga ovoz berishingiz mumkin.',
         reply_markup=reply_markup
     )
 
